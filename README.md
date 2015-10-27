@@ -22,7 +22,7 @@ There are a lot of resources for using ArcMap. It gives you nearly complete cont
 
 For a more in-depth lesson, see this [link](https://www.e-education.psu.edu/cloudGIS/node/47) as well as this [one](https://www.e-education.psu.edu/cloudGIS/node/49).
 
-For an example, look at the [UMN Campus History application](https://www.lib.umn.edu/apps/campushistory/). If you zoom in pretty far, you'll see the basemap shift to a uglier, more simple gray basemap. That's a custom one I made very quickly because we needed that level of coverage.
+For an example, look at the [UMN Campus History application](https://www.lib.umn.edu/apps/campushistory/). If you zoom in pretty far, you'll see the basemap shift to an uglier, simpler gray basemap. That's a custom one I made very quickly because we needed that level of coverage.
 
 ### Using Mapbox Studio Classic
 [Download](https://www.mapbox.com/mapbox-studio-classic/) and install onto your virtual machine. You'll need to create a Mapbox account to use it (it's free and they don't ask for a bunch of information) Mapbox Studio allows you to integrate data (called Sources) and style that data using CartoCSS. Since you have a great array of styles to start from and customize (rather than starting totally from scratch), once you get used to CartoCSS Mapbox Studio is (I think) a speedier option compared to ArcMap. Also, Mapbox handles hosting and serving of your tiles, which can sometimes be a headache with the ArcMap approach.
