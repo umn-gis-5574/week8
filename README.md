@@ -2,7 +2,7 @@
 Three approaches for creating custom basemaps  
 
 ##Start up your VM!
-https://gis5574.signin.aws.amazon.com/console)  
+https://gis5574.signin.aws.amazon.com/console
 
 ## Preamble
 In the early days of web mapping, customizing the basemap was a time consuming and rather difficult process. Today, circumstances have changed and there are several ways to build a custom basemap. As you think about your projects, consider what sort of basemap you want and which of the techniques below to utilize.
