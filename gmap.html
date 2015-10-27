@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; width:100%; margin: 0; padding: 0; }
+      #google-map { height: 500px;width:500px; }
+    </style>
+  </head>
+  <body>
+    <div id="google-map"></div>
+    <script type="text/javascript">
+
+var google_map;
+function initGoogleMap() {
+  var customMapType = new google.maps.StyledMapType([
+      {
+        stylers: [
+          {hue: '#890000'},
+          {visibility: 'simplified'},
+          {gamma: 0.5},
+          {weight: 0.5}
+        ]
+      },
+      {
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'water',
+        stylers: [{color: '#890000'}]
+      }
+    ], {
+      name: 'Custom Style'
+  });
+  var customMapTypeId = 'custom_style';
+
+  var map = new google.maps.Map(document.getElementById('google-map'), {
+    zoom: 12,
+    center: {lat: 40.674, lng: -73.946},  // Brooklyn.
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+    }
+  });
+
+  map.mapTypes.set(customMapTypeId, customMapType);
+  map.setMapTypeId(customMapTypeId);
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoE3QwsVadgmw0_XaZ-z73oAniNltqo50&callback=initGoogleMap">
+    </script>
+  </body>
+</html>
