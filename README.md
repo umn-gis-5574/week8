@@ -1,7 +1,7 @@
 # week8
 Three approaches for creating custom basemaps  
 
-**Start up your VM!**  
+##Start up your VM!
 https://gis5574.signin.aws.amazon.com/console)  
 
 ## Preamble
